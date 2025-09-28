@@ -303,10 +303,7 @@
 
         <article class="t-card" aria-label="Depoimento de Karine e Edson">
           <p class="t-name">Karine e Edson — Empresários</p>
-          <p>“O que percebemos foi a necessidade de fortalecer nossa união.
-            São muitos anos de trabalho, filhos e a correria do dia a dia, e nesse ritmo acabamos deixando a casa e a relação em segundo plano.</p>
-          <p>Chegou um momento em que entendemos: sozinhos não conseguimos dar conta de tudo. Precisávamos de pessoas preparadas para nos apoiar e dar o suporte necessário.</p>
-          <p>Com a mentoria, crescemos tanto emocionalmente quanto espiritualmente, e esse crescimento nos conectou ainda mais como casal e como família.”</p>
+          <p>“O que percebemos foi a necessidade de fortalecer nossa união.São muitos anos de trabalho, filhos e a correria do dia a dia, e nesse ritmo acabamos deixando a casa e a relação em segundo plano.Chegou um momento em que entendemos: sozinhos não conseguimos dar conta de tudo. Precisávamos de pessoas preparadas para nos apoiar e dar o suporte necessário.Com a mentoria, crescemos tanto emocionalmente quanto espiritualmente, e esse crescimento nos conectou ainda mais como casal e como família.”</p>
         </article>
       </div>
     </div>
