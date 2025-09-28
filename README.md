@@ -22,7 +22,7 @@
     :root{
       --pink:#E91E63;      /* rosa principal */
       --pink-2:#FDE8F1;    /* rosa claro */
-      --red:#D61E1E;       /* vermelho (CTA e destaques) */
+      --red:#D61E1E;       /* vermelho (CTAs) */
       --ink:#0F172A;       /* texto principal */
       --soft:#667085;      /* texto secundário */
       --line:#E9EEF5;      /* divisórias */
@@ -37,15 +37,19 @@
     a{text-decoration:none}
     .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
 
-    /* 🔥 Remover header padrão do GitHub Pages */
-    header, .page-header, .site-header, .project-name, .project-tagline {
+    /* 🔥 Remover header/título padrão do GitHub Pages (vários temas) */
+    .page-header, .site-header, .site-title, .site-nav,
+    .project-name, .project-tagline,
+    .octicon,
+    body > h1:first-of-type,
+    .markdown-body > h1:first-child {
       display: none !important;
     }
 
-    /* Barra rosa colada no topo da página (mais alta) */
+    /* Barra rosa colada no topo (70px) */
     .top-bar{
       background:var(--pink); color:#fff; text-align:center;
-      padding:70px 10px; /* antes 20px, agora +50px */
+      padding:70px 10px; /* barra alta para “empurrar” o topo do tema */
       font-weight:900; letter-spacing:.04em; text-transform:uppercase;
       font-size:clamp(18px,4.4vw,26px);
     }
@@ -138,7 +142,7 @@
 </head>
 <body>
 
-  <!-- Barra rosa colada no topo -->
+  <!-- Barra rosa -->
   <div class="top-bar" role="banner">Mentoria ALANC — Alavancagem de Carreira e Negócios</div>
 
   <!-- HERO -->
@@ -157,30 +161,261 @@
     </div>
   </section>
 
-  <!-- (demais seções iguais ao anterior) -->
-
-  <!-- DEPOIMENTOS -->
-  <section id="depoimentos" aria-labelledby="t-dep">
+  <!-- DOR -->
+  <section id="dor" aria-labelledby="t-dor">
     <div class="wrap">
-      <h2 id="t-dep" class="section-title">Depoimentos Reais de Transformação</h2>
-      <div class="testimonials">
-        <!-- Joel -->
-        <article class="t-card"><p class="t-name">Joel Souza – Terapeuta</p><p>“A minha maior trava estava em como vender meu produto [...] vencer as limitantes sobre ser empresário.”</p></article>
-        <!-- Amanda -->
-        <article class="t-card"><p class="t-name">Amanda Aragão — Dentista e empresária</p><p>“O processo de mentoria foi um divisor de águas [...] direção clara para conquistar o que está por vir.”</p></article>
-        <!-- Joice e Adriano -->
-        <article class="t-card"><p class="t-name">Joice e Adriano — Empresários</p><p>“Após trabalharmos o fluxo de caixa [...] fluxo de caixa melhorou muito.”</p></article>
-        <!-- Juciele -->
-        <article class="t-card"><p class="t-name">Juciele Cadore — Empresária</p><p>“A cada encontro é uma nova descoberta [...] melhor coisa que me aconteceu!”</p></article>
-        <!-- Alini -->
-        <article class="t-card"><p class="t-name">Alini de Paris — Consultora financeira</p><p>“Antes da Mentoria ALANC eu estava cheia de dúvidas [...] preparada para construir a vida e a carreira que desejo.”</p></article>
-        <!-- Karine e Edson -->
-        <article class="t-card"><p class="t-name">Karine e Edson — Empresários</p><p>“O que percebemos foi a necessidade de fortalecer nossa união [...] nos conectou ainda mais como casal e como família.”</p></article>
+      <h2 id="t-dor" class="section-title">Você já se pegou pensando…</h2>
+      <div class="card">
+        <ul class="list-dot">
+          <li>“Quero empreender, mas tenho medo de arriscar.”</li>
+          <li>“Me sinto presa em uma rotina que não faz mais sentido.”</li>
+          <li>“Carrego a culpa de não dar conta da família e do trabalho.”</li>
+          <li>“Tenho potencial, mas não sei qual o próximo passo certo.”</li>
+        </ul>
+        <p style="margin-top:14px"><strong> Não é falta de esforço.</strong> É falta de clareza, método e apoio certo.</p>
       </div>
     </div>
   </section>
 
-  <!-- (restante: diferenciais, FAQ, CTA final, rodapé, WhatsApp, JS iguais ao anterior) -->
+  <!-- TRANSFORMAÇÃO -->
+  <section id="transformacao" aria-labelledby="t-transf">
+    <div class="wrap">
+      <h2 id="t-transf" class="section-title">A transformação que você leva</h2>
+      <div class="grid two">
+        <div class="card pink">
+          <h3 class="grad-left">Estratégia & Clareza</h3>
+          <ul class="list-check">
+            <li>Estruturar seu negócio com clareza e estratégia.</li>
+            <li>Alinhar propósito, família e prosperidade — sem abrir mão de nenhum.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="grad-left">Confiança & Método</h3>
+          <ul class="list-check">
+            <li>Superar bloqueios emocionais e crenças limitantes.</li>
+            <li>Alavancar vendas com método prático e consistente.</li>
+            <li>Construir um negócio com alma e impacto real, com Constelação Empresarial como base.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- QUEM SOU EU -->
+  <section id="quem-sou" aria-labelledby="t-quem">
+    <div class="wrap">
+      <h2 id="t-quem" class="section-title">Quem Sou Eu</h2>
+      <div class="bio">
+        <img src="alinne.jpg" alt="Foto de Alinne de Pasinatto" width="720" height="540" loading="lazy">
+        <div>
+          <h3 class="grad-left">Alinne de Pasinatto</h3>
+          <p>Fundadora da Mentoria ALANC, contadora de formação, autora do livro <em>8 Habilidades de um Líder Extraordinário</em> e especialista em desenvolvimento pessoal, empresarial e constelação organizacional.</p>
+          <p>Comecei cedo, vendendo roupas e cosméticos aos 16 anos, enfrentei dores profundas na minha família de origem e precisei assumir responsabilidades antes da hora.
+            Transformei essas experiências em força e, com disciplina e conhecimento, criei empresas, escrevi um livro e hoje ajudo mulheres e casais a prosperarem sem perder o que realmente importa: a essência e a família.</p>
+          <div class="cta">
+            <a class="btn primary" href="https://forms.gle/3KbznEmAkpgoNaab9" target="_blank" rel="noopener">Aplicar para a Mentoria</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUEM É -->
+  <section id="publico" aria-labelledby="t-publico">
+    <div class="wrap">
+      <h2 id="t-publico" class="section-title">Para quem é a Mentoria ALANC</h2>
+      <div class="card">
+        <ul class="list-check">
+          <li>Mulheres em transição de carreira que desejam criar negócios prósperos.</li>
+          <li>Casais que querem alinhar vida, propósito e empresa.</li>
+          <li>Empreendedores(as) que já têm negócio, mas não conseguem destravar vendas e crescer.</li>
+          <li>Profissionais que querem transformar sua carreira em propósito.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section id="beneficios" aria-labelledby="t-beneficios">
+    <div class="wrap">
+      <h2 id="t-beneficios" class="section-title">Benefícios Reais</h2>
+      <div class="grid two">
+        <div class="card pink">
+          <h3 class="grad-left">Clareza do próximo passo</h3>
+          <p>Avançar sem medo de errar.</p>
+        </div>
+        <div class="card pink">
+          <h3 class="grad-left">Equilíbrio</h3>
+          <p>Negócios e família convivendo com leveza.</p>
+        </div>
+        <div class="card pink">
+          <h3 class="grad-left">Vendas com propósito</h3>
+          <p>Comunicação segura e alinhada a valores.</p>
+        </div>
+        <div class="card pink">
+          <h3 class="grad-left">Negócio com alma</h3>
+          <p>Impacto real, conectado à sua história.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS (só rosa) -->
+  <section id="depoimentos" aria-labelledby="t-dep">
+    <div class="wrap">
+      <h2 id="t-dep" class="section-title">Depoimentos Reais de Transformação</h2>
+      <div class="testimonials">
+        <article class="t-card" aria-label="Depoimento de Joel Souza – Terapeuta">
+          <p class="t-name">Joel Souza – Terapeuta</p>
+          <p>“A minha maior trava estava em como vender meu produto e como ser o profissional que me tornei hoje.
+            Com a Mentoria ALANC venci bloqueios, medos e desafios de aparecer. Já estou há cinco meses fora da CLT, atuando com segurança.
+            Essa mentoria fortaleceu minhas crenças positivas e me ajudou a vencer as limitantes sobre ser empresário.”</p>
+        </article>
+
+        <article class="t-card" aria-label="Depoimento de Amanda Aragão">
+          <p class="t-name">Amanda Aragão — Dentista e empresária</p>
+          <p>“O processo de mentoria foi um divisor de águas na minha transição para o empreendedorismo.
+            Mais do que clareza profissional, me trouxe leveza emocional e entendimento profundo sobre mim mesma.
+            Hoje me sinto mais preparada, leve e com direção clara para conquistar o que está por vir.”</p>
+        </article>
+
+        <article class="t-card" aria-label="Depoimento de Joice e Adriano">
+          <p class="t-name">Joice e Adriano — Empresários</p>
+          <p>“Após trabalharmos o fluxo de caixa da minha empresa mudou completamente.
+            Abrimos espaço para novos clientes do perfil certo, fechamos vários orçamentos e o fluxo de caixa melhorou muito.”</p>
+        </article>
+
+        <article class="t-card" aria-label="Depoimento de Juciele Cadore">
+          <p class="t-name">Juciele Cadore — Empresária</p>
+          <p>“A cada encontro é uma nova descoberta, um aprendizado único e maravilhoso.
+            A mentoria transformou minha vida!
+            Todo investimento que fazemos em nós mesmos retorna em dobro de formas inimagináveis.
+            É simplesmente a melhor coisa que me aconteceu!”</p>
+        </article>
+
+        <article class="t-card" aria-label="Depoimento de Alini de Paris">
+          <p class="t-name">Alini de Paris — Consultora financeira</p>
+          <p>“Antes da Mentoria ALANC eu estava cheia de dúvidas: carreira, vida pessoal e até sobre mim mesma.
+            Trabalhei minhas emoções, ganhei clareza e confiança.
+            Fiz uma transição segura e alinhada ao que eu realmente queria.
+            Hoje sigo mais forte, confiante e preparada para construir a vida e a carreira que desejo.”</p>
+        </article>
+
+        <article class="t-card" aria-label="Depoimento de Karine e Edson">
+          <p class="t-name">Karine e Edson — Empresários</p>
+          <p>“O que percebemos foi a necessidade de fortalecer nossa união.
+            São muitos anos de trabalho, filhos e a correria do dia a dia, e nesse ritmo acabamos deixando a casa e a relação em segundo plano.</p>
+          <p>Chegou um momento em que entendemos: sozinhos não conseguimos dar conta de tudo. Precisávamos de pessoas preparadas para nos apoiar e dar o suporte necessário.</p>
+          <p>Com a mentoria, crescemos tanto emocionalmente quanto espiritualmente, e esse crescimento nos conectou ainda mais como casal e como família.”</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section id="diferenciais" aria-labelledby="t-dif">
+    <div class="wrap">
+      <h2 id="t-dif" class="section-title">Por que a Mentoria ALANC é Diferente?</h2>
+      <div class="card">
+        <p><strong>Estratégia de negócios + Constelação empresarial + Inteligência emocional.</strong>
+          Você não aprende só a vender. Você aprende a crescer com equilíbrio, respeitando sua história, seu propósito e a sua família.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" aria-labelledby="t-faq">
+    <div class="wrap">
+      <h2 id="t-faq" class="section-title">Perguntas Frequentes</h2>
+    </div>
+    <div class="wrap">
+      <div class="faq" role="list">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false"><span>Como faço minha aplicação?</span><span class="mark">+</span></button>
+          <div class="faq-a" aria-hidden="true"><div class="faq-a-inner">
+            Clique em <strong>“Quero entrar na Mentoria ALANC”</strong>. O formulário abre em nova guia para você preencher.
+          </div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false"><span>Para quem é a mentoria?</span><span class="mark">+</span></button>
+          <div class="faq-a" aria-hidden="true"><div class="faq-a-inner">
+            Mulheres em transição, casais empreendedores, quem já tem negócio e quer destravar vendas, e profissionais que buscam propósito na carreira.
+          </div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false"><span>Preciso ter empresa aberta?</span><span class="mark">+</span></button>
+          <div class="faq-a" aria-hidden="true"><div class="faq-a-inner">
+            Não. O importante é compromisso com um caminho prático, sustentável e alinhado aos seus valores.
+          </div></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false"><span>Qual é a abordagem de trabalho?</span><span class="mark">+</span></button>
+          <div class="faq-a" aria-hidden="true"><div class="faq-a-inner">
+            Método prático de gestão e vendas somado à Constelação Empresarial e ao desenvolvimento emocional para decisões maduras e consistentes.
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section aria-labelledby="t-cta" style="padding:32px 0">
+    <div class="wrap">
+      <div class="footer-cta">
+        <div>
+          <div style="font-weight:800;color:var(--red);letter-spacing:.06em;text-transform:uppercase;font-size:12px">Pronta(o) para alavancar?</div>
+          <h3 id="t-cta" style="margin:6px 0 0;font-size:22px;color:var(--ink)">Agora é a sua vez de crescer com clareza, propósito e equilíbrio.</h3>
+        </div>
+        <div class="cta" style="margin:0">
+          <a class="btn primary" href="https://forms.gle/3KbznEmAkpgoNaab9" target="_blank" rel="noopener">Fazer minha aplicação</a>
+          <a class="btn ghost" href="https://wa.me/5549999726831?text=Quero%20saber%20mais%20sobre%20a%20Mentoria%20ALANC" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer role="contentinfo">
+    © Mentoria ALANC — Todos os direitos reservados.
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a class="whats-float" href="https://wa.me/5549999726831?text=Quero%20saber%20mais%20sobre%20a%20Mentoria%20ALANC"
+     target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20.5 3.5A10 10 0 0 0 3.2 17.7L2 22l4.4-1.2A10 10 0 1 0 20.5 3.5Zm-8.4 2.2c4.1 0 7.4 3.3 7.4 7.4a7.4 7.4 0 0 1-10.1 6.8l-.3-.1-2.6.7.7-2.5-.1-.3a7.4 7.4 0 0 1 5-11.9Zm4.2 9.8c-.2.6-1.1 1-1.5 1.1-.4.1-.9.1-1.5 0s-1.5-.5-2.6-1.1c-1-.6-1.8-1.6-2.1-2.1-.3-.5-.5-1.3-.1-1.9.2-.3.5-.8.8-.8h.6c.1 0 .4-.1.6.5.2.6.8 2 .9 2.2.1.2.1.4 0 .6s-.2.4-.4.6c-.2.2-.4.4-.2.7.2.3.9 1.4 2.1 2 .9.5 1.6.6 1.9.4.3-.2.4-.5.6-.8.2-.3.5-.4.8-.3l1.9.9c.3.1.5.3.6.5Z"/>
+    </svg>
+  </a>
+
+  <!-- JS do FAQ -->
+  <script>
+    (function(){
+      const items = document.querySelectorAll('.faq-item');
+      items.forEach((item) => {
+        const btn = item.querySelector('.faq-q');
+        const panel = item.querySelector('.faq-a');
+        if(!btn) return;
+        btn.addEventListener('click', () => {
+          // fecha os outros
+          items.forEach(i => {
+            if(i !== item){
+              i.classList.remove('open');
+              const b = i.querySelector('.faq-q');
+              const p = i.querySelector('.faq-a');
+              b && b.setAttribute('aria-expanded','false');
+              p && p.setAttribute('aria-hidden','true');
+            }
+          });
+          // alterna este
+          const isOpen = item.classList.toggle('open');
+          btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          panel && panel.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
