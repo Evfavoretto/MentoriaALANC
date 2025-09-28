@@ -60,7 +60,19 @@
       background:#fff; border:1px solid var(--line); border-radius:22px;
       padding:28px 22px 30px; box-shadow:0 16px 36px rgba(0,0,0,.06); text-align:center
     }
-    .logo{max-height:160px;width:auto;margin:0 auto 16px}
+    .logo {
+  max-height: 120px;   /* reduz um pouco no mobile */
+  max-width: 80%;      /* nunca passa de 80% da tela */
+  height: auto;
+  margin: 0 auto 16px;
+}
+@media (min-width: 768px) {
+  .logo {
+    max-height: 160px; /* no tablet/desktop mantém maior */
+    max-width: 400px;  /* limite fixo mais elegante */
+  }
+}
+
     .hero h1{
       margin:0 0 10px; font-size:clamp(28px,4.6vw,46px); line-height:1.08; font-weight:900
     }
