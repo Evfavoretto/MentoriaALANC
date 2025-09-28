@@ -131,6 +131,10 @@
 
     /* Foco visível */
     a:focus, .btn:focus, .faq-q:focus{outline:3px solid #ffd1d9; outline-offset:2px; border-radius:12px}
+    /* 🔥 Remover header padrão do GitHub Pages */
+header, .page-header, .site-header, .project-name, .project-tagline {
+  display: none !important;
+}
   </style>
 </head>
 <body>
@@ -165,7 +169,7 @@
           <li>“Carrego a culpa de não dar conta da família e do trabalho.”</li>
           <li>“Tenho potencial, mas não sei qual o próximo passo certo.”</li>
         </ul>
-        <p style="margin-top:14px"><strong>👉 Não é falta de esforço.</strong> É falta de clareza, método e apoio certo.</p>
+        <p style="margin-top:14px"><strong> Não é falta de esforço.</strong> É falta de clareza, método e apoio certo.</p>
       </div>
     </div>
   </section>
