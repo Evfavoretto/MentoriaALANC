@@ -22,7 +22,7 @@
     :root{
       --pink:#E91E63;      /* rosa principal */
       --pink-2:#FDE8F1;    /* rosa claro */
-      --red:#D61E1E;       /* vermelho (CTA e topo) */
+      --red:#D61E1E;       /* vermelho (CTA e destaques) */
       --ink:#0F172A;       /* texto principal */
       --soft:#667085;      /* texto secundário */
       --line:#E9EEF5;      /* divisórias */
@@ -42,11 +42,11 @@
       display: none !important;
     }
 
-    /* Cabeçalho superior vermelho */
+    /* Barra rosa colada no topo da página (cobre qualquer resquício visual) */
     .top-bar{
-      background:var(--red); color:#fff; text-align:center;
-      padding:14px 10px; font-weight:900; letter-spacing:.04em; text-transform:uppercase;
-      font-size:clamp(18px,4.4vw,26px)
+      background:var(--pink); color:#fff; text-align:center;
+      padding:20px 10px; font-weight:900; letter-spacing:.04em; text-transform:uppercase;
+      font-size:clamp(18px,4.4vw,26px);
     }
 
     /* HERO */
@@ -137,7 +137,7 @@
 </head>
 <body>
 
-  <!-- Topo -->
+  <!-- Barra rosa colada no topo -->
   <div class="top-bar" role="banner">Mentoria ALANC — Alavancagem de Carreira e Negócios</div>
 
   <!-- HERO -->
@@ -167,7 +167,7 @@
           <li>“Carrego a culpa de não dar conta da família e do trabalho.”</li>
           <li>“Tenho potencial, mas não sei qual o próximo passo certo.”</li>
         </ul>
-        <p style="margin-top:14px"><strong>👉 Não é falta de esforço.</strong> É falta de clareza, método e apoio certo.</p>
+        <p style="margin-top:14px"><strong> Não é falta de esforço.</strong> É falta de clareza, método e apoio certo.</p>
       </div>
     </div>
   </section>
@@ -275,25 +275,26 @@
         </article>
 
         <article class="t-card" aria-label="Depoimento de Joice e Adriano">
-          <p class="t-name">Joice e Adriano — empresária</p>
+          <p class="t-name">Joice e Adriano — Empresários</p>
           <p>“Após trabalharmos o fluxo de caixa da minha empresa mudou completamente.
             Abrimos espaço para novos clientes do perfil certo, fechamos vários orçamentos e o fluxo de caixa melhorou muito.”</p>
         </article>
 
         <article class="t-card" aria-label="Depoimento de Juciele Cadore">
-          <p class="t-name">Juciele Cadore — empresária</p>
+          <p class="t-name">Juciele Cadore — Empresária</p>
           <p>“A cada encontro é uma nova descoberta, um aprendizado único e maravilhoso.
             A mentoria transformou minha vida!
             Todo investimento que fazemos em nós mesmos retorna em dobro de formas inimagináveis.
             É simplesmente a melhor coisa que me aconteceu!”</p>
         </article>
 
-        <article class="t-card" aria-label="Depoimento de Alini de Paris">
-          <p class="t-name">Alini de Paris — Consultora financeira</p>
-          <p>“Antes da Mentoria ALANC eu estava cheia de dúvidas: sobre minha carreira, minha vida pessoal e até sobre mim mesma.
-            Na mentoria, consegui trabalhar minhas emoções, ganhar clareza e confiança.
-            O resultado foi uma transição de carreira segura, tranquila e alinhada ao que eu realmente queria.
-            Hoje sigo mais forte, confiante e preparada para construir a vida e a carreira que desejo.”</p>
+        <!-- Novo depoimento: Karine e Edson -->
+        <article class="t-card" aria-label="Depoimento de Karine e Edson — Empresários">
+          <p class="t-name">Karine e Edson — Empresários</p>
+          <p>“O que percebemos foi a necessidade de fortalecer nossa união.
+            São muitos anos de trabalho, filhos e a correria do dia a dia, e nesse ritmo acabamos deixando a casa e a relação em segundo plano.</p>
+          <p>Chegou um momento em que entendemos: sozinhos não conseguimos dar conta de tudo. Precisávamos de pessoas preparadas para nos apoiar e dar o suporte necessário.</p>
+          <p>Com a mentoria, crescemos tanto emocionalmente quanto espiritualmente, e esse crescimento nos conectou ainda mais como casal e como família.”</p>
         </article>
       </div>
     </div>
