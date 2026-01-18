@@ -380,7 +380,7 @@
         </div>
         <div class="cta" style="margin:0">
           <a class="btn primary" href="https://forms.gle/3KbznEmAkpgoNaab9" target="_blank" rel="noopener">Fazer minha aplicação</a>
-          <a class="btn ghost" href="https://wa.me/5549999726831?text=Quero%20saber%20mais%20sobre%20a%20Mentoria%20ALANC" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a class="btn ghost" href="https://wa.me/5549999728631?text=Quero%20saber%20mais%20sobre%20a%20Mentoria%20ALANC" target="_blank" rel="noopener">Falar no WhatsApp</a>
         </div>
       </div>
     </div>
@@ -392,7 +392,7 @@
   </footer>
 
   <!-- BOTÃO FLUTUANTE WHATSAPP -->
-  <a class="whats-float" href="https://wa.me/5549999726831?text=Quero%20saber%20mais%20sobre%20a%20Mentoria%20ALANC"
+  <a class="whats-float" href="https://wa.me/5549999728631?text=Quero%20saber%20mais%20sobre%20a%20Mentoria%20ALANC"
      target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M20.5 3.5A10 10 0 0 0 3.2 17.7L2 22l4.4-1.2A10 10 0 1 0 20.5 3.5Zm-8.4 2.2c4.1 0 7.4 3.3 7.4 7.4a7.4 7.4 0 0 1-10.1 6.8l-.3-.1-2.6.7.7-2.5-.1-.3a7.4 7.4 0 0 1 5-11.9Zm4.2 9.8c-.2.6-1.1 1-1.5 1.1-.4.1-.9.1-1.5 0s-1.5-.5-2.6-1.1c-1-.6-1.8-1.6-2.1-2.1-.3-.5-.5-1.3-.1-1.9.2-.3.5-.8.8-.8h.6c.1 0 .4-.1.6.5.2.6.8 2 .9 2.2.1.2.1.4 0 .6s-.2.4-.4.6c-.2.2-.4.4-.2.7.2.3.9 1.4 2.1 2 .9.5 1.6.6 1.9.4.3-.2.4-.5.6-.8.2-.3.5-.4.8-.3l1.9.9c.3.1.5.3.6.5Z"/>
